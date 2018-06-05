@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3l1-2d-e9x" customClass="OCTextInput" customModule="OCTextInput">
+                                <rect key="frame" x="45" y="70" width="285" height="52"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="M6i-ia-edn"/>
+                                    <constraint firstAttribute="width" constant="285" id="QdQ-Fg-G7K"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tM-OK-e0Z" customClass="OCTextInput" customModule="OCTextInput">
+                                <rect key="frame" x="45" y="136" width="285" height="52"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="BJ7-yN-Mv0"/>
+                                    <constraint firstAttribute="width" constant="285" id="s6y-yj-YXn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCy-Dy-C3f" customClass="OCTextInput" customModule="OCTextInput">
+                                <rect key="frame" x="45" y="202" width="285" height="52"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="QOF-qf-jNA"/>
+                                    <constraint firstAttribute="width" constant="285" id="qY0-c6-B0f"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5i-iC-XHq" customClass="OCTextInput" customModule="OCTextInput">
+                                <rect key="frame" x="45" y="268" width="285" height="52"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="E0R-G3-5tE"/>
+                                    <constraint firstAttribute="width" constant="285" id="zFf-Q7-0Wm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="F5i-iC-XHq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FVi-h8-vzn"/>
+                            <constraint firstItem="eCy-Dy-C3f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GC2-WQ-z3q"/>
+                            <constraint firstItem="F5i-iC-XHq" firstAttribute="top" secondItem="eCy-Dy-C3f" secondAttribute="bottom" constant="14" id="Kam-zx-FGe"/>
+                            <constraint firstItem="3l1-2d-e9x" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="MQH-gz-9ff"/>
+                            <constraint firstItem="5tM-OK-e0Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mb1-Ho-Efp"/>
+                            <constraint firstItem="3l1-2d-e9x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s4g-Tb-5Js"/>
+                            <constraint firstItem="5tM-OK-e0Z" firstAttribute="top" secondItem="3l1-2d-e9x" secondAttribute="bottom" constant="14" id="vS9-ea-viE"/>
+                            <constraint firstItem="eCy-Dy-C3f" firstAttribute="top" secondItem="5tM-OK-e0Z" secondAttribute="bottom" constant="14" id="yx7-yc-ThL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tiDefault" destination="3l1-2d-e9x" id="An7-4w-QKp"/>
+                        <outlet property="tiEmail" destination="eCy-Dy-C3f" id="udh-MZ-TOs"/>
+                        <outlet property="tiNumeric" destination="F5i-iC-XHq" id="CHV-Zd-XMU"/>
+                        <outlet property="tiPassword" destination="5tM-OK-e0Z" id="NzM-3y-IOb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
