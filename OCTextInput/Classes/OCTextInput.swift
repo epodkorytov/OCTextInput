@@ -168,7 +168,7 @@ public class OCTextInput: UIControl {
     //
     override open var intrinsicContentSize: CGSize {
         let normalHeight : CGFloat = textInput.view.intrinsicContentSize.height
-        return CGSize(width: UIViewNoIntrinsicMetric, height: normalHeight + style.marginInsets.top + style.marginInsets.bottom)
+        return CGSize(width: UIView.noIntrinsicMetric, height: normalHeight + style.marginInsets.top + style.marginInsets.bottom)
     }
     
     open override func updateConstraints() {
@@ -696,7 +696,7 @@ public protocol TextInput {
     var currentText: String? { get set }
     var font: UIFont? { get set }
     var textColor: UIColor? { get set }
-    weak var textInputDelegate: TextInputDelegate? { get set }
+    var textInputDelegate: TextInputDelegate? { get set }
     var currentSelectedTextRange: UITextRange? { get set }
     var currentBeginningOfDocument: UITextPosition? { get }
     

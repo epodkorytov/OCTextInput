@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B9EFD371FA1ED42005D3F7D /* OCTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 852D821A1E42475A006A449B /* OCTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		852D82291E424C2D006A449B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852D82281E424C2D006A449B /* AppDelegate.swift */; };
 		852D822B1E424C2D006A449B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852D822A1E424C2D006A449B /* ViewController.swift */; };
 		852D822E1E424C2D006A449B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852D822C1E424C2D006A449B /* Main.storyboard */; };
@@ -24,7 +23,6 @@
 		852D82671E42506F006A449B /* OCTextInputFieldConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852D82611E42506F006A449B /* OCTextInputFieldConfigurator.swift */; };
 		852D82681E42506F006A449B /* OCTextInputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852D82621E42506F006A449B /* OCTextInputStyle.swift */; };
 		852D82691E42506F006A449B /* OCTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852D82631E42506F006A449B /* OCTextView.swift */; };
-		852D82701E42593F006A449B /* OCTextInput.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852D82171E42475A006A449B /* OCTextInput.framework */; };
 		852D82711E42593F006A449B /* OCTextInput.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 852D82171E42475A006A449B /* OCTextInput.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		852D82761E426A27006A449B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852D82751E426A27006A449B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -55,7 +53,6 @@
 
 /* Begin PBXFileReference section */
 		852D82171E42475A006A449B /* OCTextInput.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCTextInput.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		852D821A1E42475A006A449B /* OCTextInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTextInput.h; sourceTree = "<group>"; };
 		852D821B1E42475A006A449B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		852D82261E424C2D006A449B /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		852D82281E424C2D006A449B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				852D82701E42593F006A449B /* OCTextInput.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				852D82381E424C5A006A449B /* Classes */,
-				852D821A1E42475A006A449B /* OCTextInput.h */,
 				852D821B1E42475A006A449B /* Info.plist */,
 				852D82751E426A27006A449B /* Assets.xcassets */,
 			);
@@ -159,17 +154,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		852D82141E42475A006A449B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B9EFD371FA1ED42005D3F7D /* OCTextInput.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		852D82161E42475A006A449B /* OCTextInput */ = {
 			isa = PBXNativeTarget;
@@ -177,7 +161,6 @@
 			buildPhases = (
 				852D82121E42475A006A449B /* Sources */,
 				852D82131E42475A006A449B /* Frameworks */,
-				852D82141E42475A006A449B /* Headers */,
 				852D82151E42475A006A449B /* Resources */,
 			);
 			buildRules = (
@@ -215,7 +198,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = OverC;
 				TargetAttributes = {
 					852D82161E42475A006A449B = {
@@ -225,7 +208,8 @@
 					};
 					852D82251E424C2C006A449B = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2YCCX64PW6;
+						DevelopmentTeam = 82QZ2C759F;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -341,6 +325,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -348,6 +333,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -401,6 +387,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -408,6 +395,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -453,12 +441,12 @@
 				INFOPLIST_FILE = OCTextInput/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.openmozz.OCTextInput;
+				PRODUCT_BUNDLE_IDENTIFIER = Framework.OCTextInput;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -475,12 +463,12 @@
 				INFOPLIST_FILE = OCTextInput/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.openmozz.OCTextInput;
+				PRODUCT_BUNDLE_IDENTIFIER = Framework.OCTextInput;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -490,14 +478,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2YCCX64PW6;
+				DEVELOPMENT_TEAM = 82QZ2C759F;
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.openmozz.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = Framework.OCTextInput.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -506,14 +494,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2YCCX64PW6;
+				DEVELOPMENT_TEAM = 82QZ2C759F;
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.openmozz.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = Framework.OCTextInput.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

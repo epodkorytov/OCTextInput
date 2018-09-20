@@ -32,7 +32,7 @@ extension OCTextView: TextInput {
         set { self.text = newValue }
     }
     
-    var textAttributes: [String: Any] {
+    var textAttributes: [NSAttributedString.Key: Any] {
         get { return typingAttributes }
         set { self.typingAttributes = textAttributes }
     }
@@ -42,7 +42,7 @@ extension OCTextView: TextInput {
         set { self.selectedTextRange = newValue }
     }
     
-    open var currentBeginningOfDocument: UITextPosition? {
+    public var currentBeginningOfDocument: UITextPosition? {
         return self.beginningOfDocument
     }
     
